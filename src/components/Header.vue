@@ -64,6 +64,10 @@ li a {
 	padding: 35px 0;
 }
 
+li a:hover {
+	color: #0282f9;
+}
+
 .active {
 	color: #0282f9;
 	border-bottom: 8px solid #0282f9;
