@@ -48,7 +48,9 @@
 					</div>
 				</div>
 				<div class="col-50">
-					<img src="../assets/img/dc-logo-bg.png" alt="" />
+					<div class="img-cont">
+						<img src="../assets/img/dc-logo-bg.png" alt="" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -61,11 +63,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 #links {
 	background-image: url(../assets/img/footer-bg.jpg);
 	padding: 50px 0;
 	position: relative;
+	height: 440px;
 }
 .row > .col-50 {
 	display: flex;
@@ -74,6 +77,7 @@ export default {
 .col-50 img {
 	position: absolute;
 	top: -100px;
+	margin-left: 30px;
 }
 
 .col {

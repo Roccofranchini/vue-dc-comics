@@ -4,6 +4,7 @@
 		<Jumbo />
 		<Banner />
 		<Links />
+		<Footer />
 	</div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header.vue";
 import Jumbo from "./components/Jumbo.vue";
 import Banner from "./components/Banner.vue";
 import Links from "./components/Links.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
 	name: "App",
@@ -20,6 +22,7 @@ export default {
 		Jumbo,
 		Banner,
 		Links,
+		Footer,
 	},
 };
 </script>
