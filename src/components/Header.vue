@@ -57,7 +57,7 @@ ul {
 
 li {
 	padding: 0 10px;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .active {
