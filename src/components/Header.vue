@@ -7,16 +7,9 @@
 				</div>
 				<div class="col-50">
 					<ul>
-						<li><a href="">CHARACTERS</a></li>
-						<li><a href="" class="active">COMICS</a></li>
-						<li><a href="">MOVIES</a></li>
-						<li><a href="">TV</a></li>
-						<li><a href="">GAMES</a></li>
-						<li><a href="">COLLECTIBLES</a></li>
-						<li><a href="">VIDEOS</a></li>
-						<li><a href="">FANS</a></li>
-						<li><a href="">NEWS</a></li>
-						<li><a href="">SHOP</a></li>
+						<li v-for="(nav, index) in navs" :key="index">
+							<a href="" :class="isActive(nav)">{{ nav.text }}</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -28,6 +21,68 @@
 export default {
 	name: "Header",
 	props: {},
+	data() {
+		return {
+			navs: [
+				{
+					text: "Characters",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Comics",
+					url: "#",
+					current: true,
+				},
+				{
+					text: "Movies",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "TV",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Games",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Collectibles",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Videos",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Fans",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "News",
+					url: "#",
+					current: false,
+				},
+				{
+					text: "Shop",
+					url: "#",
+					current: false,
+				},
+			],
+		};
+	},
+	computed: {},
+	methods: {
+		isActive(nav) {
+			return nav.current === true ? "active" : "";
+		},
+	},
 };
 </script>
 
